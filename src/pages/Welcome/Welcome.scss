@@ -1,0 +1,31 @@
+@import 'styles/colors.scss';
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 150px;
+
+  height: 100vh;
+  background-color: $color-main;
+
+  &__header {
+    color: $color-secondary;
+    font-size: 4rem;
+  }
+
+  &__glider {
+    cursor: pointer;
+    width: 500px;
+  }
+}
+
+.rotate {
+  animation: rotate 1s infinite;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(90deg);
+  }
+}

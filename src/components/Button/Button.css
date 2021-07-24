@@ -1,0 +1,12 @@
+.button__l {
+  width: 300px;
+  height: 80px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.button__s {
+  width: 100px;
+  height: 27px;
+  font-size: 1rem;
+}
