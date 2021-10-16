@@ -13,7 +13,7 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "parser": "@typescript-eslint/parser",
-  "ignorePatterns": ["serviceWorker.js", "*.test.js"],
+  "ignorePatterns": ["serviceWorker.js", "*.test.js", "**/stories"],
   "rules": {
     "jsx-quotes": ["error", "prefer-single"],
     "no-use-before-define": "off",

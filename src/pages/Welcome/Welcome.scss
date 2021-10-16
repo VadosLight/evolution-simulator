@@ -22,10 +22,10 @@
 }
 
 .rotate {
-  animation: rotate 1s infinite;
+  animation: rotate 3s infinite;
 }
 @keyframes rotate {
   to {
-    transform: rotate(90deg);
+    transform: rotate(360deg);
   }
 }

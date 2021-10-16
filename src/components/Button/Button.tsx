@@ -3,7 +3,7 @@ import './Button.css';
 
 type PropType = {
   id?: string;
-  size: 's' | 'm' | 'l';
+  size: 'small' | 'medium' | 'large';
   className?: string;
   content?: string | React.ReactChild;
   children?: string | React.ReactChild;

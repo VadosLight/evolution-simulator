@@ -1,26 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { StoreType } from 'redux/store';
-import { thunkIterateWorld, thunkTogglePause } from 'redux/reducers/world';
+import { thunkTogglePause } from 'redux/reducers/world';
 
 import { Button } from 'components/Button/Button';
+import './Simulation.scss';
 
 export const Simulation = () => {
   const dispatch = useDispatch();
-  const [state, setState] = useState<number>(0);
-  const currentIteration = useSelector((state: StoreType) => state.worldReducer.iteration);
+  const currentIteration = useSelector((store: StoreType) => store.worldReducer.iteration);
 
   const Тык = () => {
-    setState((prev) => prev + 1);
     dispatch(thunkTogglePause());
   };
 
   return (
-    <div>
+    <div className='myBlock'>
       <h1>Ты в симуляции</h1>
-      <Button size='s' content='Тык' onClick={Тык} />
-      <br />
-      {state}
+      <Button size='small' content='123' onClick={Тык} />
       <br />
       {currentIteration}
     </div>
